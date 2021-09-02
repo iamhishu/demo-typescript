@@ -16,7 +16,7 @@ axios.get('https://pokeapi.co/api/v2/pokemon?limit=100&offset=200')
     // handle success
    // console.log(response.data.results);
   setPokemonList(response.data.results);
-  
+    //set all pokemons UI
   })
   .catch(function (error) {
     // handle error
@@ -24,6 +24,7 @@ axios.get('https://pokeapi.co/api/v2/pokemon?limit=100&offset=200')
   })
   .then(function () {
     // always executed
+    //default
   });
 
 
