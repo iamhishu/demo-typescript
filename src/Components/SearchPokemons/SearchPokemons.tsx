@@ -1,11 +1,13 @@
 import React, {useState , useEffect} from 'react';
 import axios from 'axios';
-import "../App.css";
+import Button from 'react-bootstrap/Button';
+
+// import "../App.css";
 
 
 
 
-function Todos (){
+function AllPokemons (){
 
 const [pokemonList, setPokemonList] = useState<any[]>([]);
 
@@ -30,8 +32,12 @@ axios.get('https://pokeapi.co/api/v2/pokemon?limit=100&offset=200')
 
 }, [])
 
+
+
+
 return (
    <div style={{display:'flex',flexWrap:'wrap'}}>
+  <Button variant="primary">Primary</Button>
 {pokemonList.map(({name},index)=>
 {
 
@@ -52,6 +58,6 @@ return(
 }
 
 
-export default Todos
+export default AllPokemons
 
 

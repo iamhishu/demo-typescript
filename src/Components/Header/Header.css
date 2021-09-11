@@ -1,0 +1,19 @@
+.active {
+  margin: 1rem;
+  text-decoration: none;
+  color: rgb(255 0 0) !important;
+  font-weight: 900;
+  font-size: 1.2rem !important;
+}
+
+.active {
+  /*
+      All of the base styles have
+      moved to the “CSS” tab above.
+    */
+  transition: transform 230ms;
+}
+
+.active:hover {
+  transform: translateY(-10px);
+}
