@@ -17,12 +17,11 @@ const linkStyle = {
 
 
 function Header (){
-
 return(
-<Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
+<Navbar collapseOnSelect expand="lg" sticky="top"  variant="dark">
   <Container>
-  <Navbar.Brand href="#home">Pokedex</Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Brand href="#home"><span className="pksymbol-wrappern">Pokedex<i className="pksymbol pksymbol-pokeball-logo"></i></span></Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-avbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
    <NavLink exact to="/" style={linkStyle} activeClassName="active" >Home</NavLink>

@@ -1,7 +1,7 @@
 .active {
   margin: 1rem;
   text-decoration: none;
-  color: rgb(255 0 0) !important;
+  color: #feca1c !important;
   font-weight: 900;
   font-size: 1.2rem !important;
 }
@@ -16,4 +16,8 @@
 
 .active:hover {
   transform: translateY(-10px);
+}
+
+.navbar {
+  background: #2f466e !important;
 }

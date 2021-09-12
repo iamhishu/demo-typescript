@@ -10,7 +10,8 @@ const footerStyle = {
 }
 
   return (
-    <MDBFooter color="stylish-color-dark" style={{position:'fixed',width:"100%"}} className="page-footer font-small pt-4 mt-4">
+    <MDBFooter  style={{position:'fixed',width:"100%" , 
+    background: '#2f466e !important'}} className="page-footer font-small pt-4 mt-4 pokeFooter">
     
       <div className="text-center">
         <ul className="list-unstyled list-inline">
