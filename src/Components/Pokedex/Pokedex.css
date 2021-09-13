@@ -43,7 +43,7 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   background-color: var(--secondary-bg-color);
 }
@@ -178,7 +178,7 @@ input {
 .lights-container {
   position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -369,7 +369,7 @@ input {
 .upper-buttons-container {
   display: flex;
   align-items: top;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .long-buttons-container {
@@ -558,7 +558,7 @@ input {
 .small-reds-container {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .small-reds-container .small-light {
   border: solid black 2px;

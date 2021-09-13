@@ -1,17 +1,15 @@
 import React from "react";
-import { MDBBadge, MDBContainer } from "mdbreact";
+import { MDBBadge } from "mdbreact";
 
-const BadgePage = (props:any) => {
+const BadgePage = (props: any) => {
   return (
-
-      <MDBBadge 
+    <MDBBadge
       name={props.name}
-      color={props.color ? props.color : 'default'}
-      onClick={()=>props.BtnClick(props.name)}
-      >
+      color={props.color ? props.color : "default"}
+      onClick={() => props.BtnClick(props.name)}
+    >
       {props.name}
-      </MDBBadge>
-    
+    </MDBBadge>
   );
 };
 

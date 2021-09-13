@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { MDBContainer, MDBRow, MDBCol, MDBBtn } from "mdbreact";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import { MDBContainer, MDBCol } from "mdbreact";
+import { Button, Modal, ModalBody } from "reactstrap";
 
 import MainLogo from "../../assets/Images/pokeapi.png";
 import Search from "../../UI/Search/Search";
 import Tag from "../../UI/Tags/Tags";
 import Loader from "../../UI/Loader/Loader";
-import PokeCard from "../PokeCards/PokeCard";
+
 import Card from "react-bootstrap/Card";
 import Pokedex from "../../Components/Pokedex/Pokedex";
 import Img from "../../UI/ImageWithFallBack/Img";
@@ -20,7 +20,7 @@ function AllPokemons() {
   const [pokemonList, setPokemonList] = useState<any[]>([]);
   const [searchedPokemonList, setsearchedPokemonList] = useState<any[]>([]);
   const [modal, setModal] = useState(false);
-  const [modelLoader, setModelLoader] = useState(false);
+
   const [pokedex, setPokeDex] = useState(false);
   const toggle = () => {
     setModal(!modal);
@@ -119,6 +119,8 @@ function AllPokemons() {
         //default
       });
   };
+
+  console.log(pokedex);
 
   return (
     <>
